@@ -1,0 +1,263 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+.top-contatos{
+    background-color: #1a1a1a;
+    color: #bdbdbd;
+    font-size: .8rem;
+}
+
+.conteudo-contatos{
+    max-width: 640px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.logo-menu{
+    background-color: #FFCC22;
+}
+.logo-menu-fixo{
+    position: fixed;
+    background-color: #FFCC22;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+.lm-conteudo{
+    max-width: 640px;
+    margin: auto;
+    padding: 35px;
+    position: relative;
+    
+}
+.logo-barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-barra i{
+    font-size: 1.5rem;
+    color: #77332a;
+    cursor: pointer;
+}
+.logo-menu-fixo h1{
+    margin: 0;
+    text-transform: uppercase;
+    border-bottom: 2px solid #74271D;
+    border-top: 2px solid #74271D;
+    color: #77332a;
+    font-weight: 500;
+}
+.logo-menu h1{
+    margin: 0;
+    text-transform: uppercase;
+    border-bottom: 2px solid #74271D;
+    border-top: 2px solid #74271D;
+    color: #77332a;
+    font-weight: 500;
+}
+.top-menu{
+    position: absolute;
+    background-color: #FFCC22;
+    text-align: center;
+    /*top: 110px;*/
+    right: 0;
+    top: -400px;
+    border-top: 1px solid #74271D;
+    border-bottom: 1px solid #74271D;
+    transition: all .8s;
+    z-index: 0;
+}
+.principal{
+    position: relative;
+    top: 100px;
+    z-index: 1;
+}
+.top-menu-aberto{
+    /*right: 0;*/
+    top: 110px;
+}
+.top-menu a{
+    color: #77332a;
+    text-transform: uppercase;
+    padding: 10px;
+    display: block;
+}
+
+.banner-img img{
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+}
+
+
+.txt-1{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.5rem;
+    margin-bottom: 60px;
+    color: #777777;
+}
+.txt1-p1{
+    margin: 0;
+}
+.txt1-p2{
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.cards{
+    max-width: 640px;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    padding: 25px 0;
+}
+.card{
+    width: 300px;
+    text-align: center;
+}
+.card img{
+    width: 100%;
+}
+.card h2{
+    font-weight: 500;
+}
+.card-p1{
+    margin-bottom: 3px;
+    font-size: .8rem;
+    color: #4e4e4e;
+    line-height: 1.5;
+}
+
+.localizacao{
+    background-color: #303030;
+    color: #fff;
+    padding: 25px 0;
+}
+.localizacao-conteudo{
+    max-width: 640px;
+    margin: auto;
+    
+}
+.localizacao-conteudo h2{
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+.end-map{
+    display: grid;
+    /*grid-template-columns: repeat(2,50%);*/
+    margin-top: 50px;
+}
+.end{
+    text-align: center;
+    justify-self: center;
+    margin-bottom: 15px;
+}
+.h-funcionamento{
+    margin-top: 25px;
+    text-transform: uppercase;
+    color: #777777;
+}
+.end div{
+    padding: 5px 0;
+    
+}
+
+.map iframe{
+    width: 100%;
+    height: 300px;
+}
+
+footer{
+    background-color: #1a1a1a;
+    color: #e2e2e2;
+    
+}
+.footer-conteudo{
+    max-width: 640px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+
+@media screen and (min-width: 640px){
+    .top-contatos{
+        font-size: 1rem;
+    }
+
+    .lm-conteudo{
+        max-width: 1260px;
+    }
+
+    .cards{
+        max-width: 1260px;
+        
+    }
+
+    .localizacao-conteudo{
+        max-width: 100%;
+    }
+
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 40px;
+        row-gap: 100px;
+        justify-items: center;
+    }
+}
+
+
+@media screen and (min-width: 1260px){
+    .top-menu{
+        position: relative;
+        background-color: transparent;
+        left: 10px;
+        top: 0;
+        border-top: none;
+        border-bottom: none;
+    }
+    .top-menu ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    .top-menu a{
+        color: #77332a;
+        text-transform: uppercase;
+        margin-left: 25px;
+    }
+    .barra{
+        display: none;
+    }
+    .lm-conteudo{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .cards{
+        grid-template-columns: repeat(4,1fr);
+        column-gap: 0px;
+        justify-items: center;
+    }
+    .card{
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+}

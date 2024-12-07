@@ -2,15 +2,15 @@
 
 This template should help get you started developing with Vue 3 in Vite.
 
-## Recommended IDE Setup
+## Configuração de IDE Recomendada
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-## Customize configuration
+## Personalizar Configuração
 
 See [Vite Configuration Reference](https://vite.dev/config/).
 
-## Project Setup
+## Configuração do Projeto
 
 ### Iniciar projeto
 ```sh
@@ -24,13 +24,19 @@ cd nome-do-projeto
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### meta que evita o zoom da tela no mobile
+```sh
+<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1, user-scalable=no">
+```
+
+
+### Compilar e Recarga Automática para Desenvolvimento
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+### Compilar e Minimizar para Produção
 
 ```sh
 npm run build

@@ -1,4 +1,4 @@
-# app-vite
+# app-contas
 
 This template should help get you started developing with Vue 3 in Vite.
 
@@ -11,6 +11,14 @@ This template should help get you started developing with Vue 3 in Vite.
 See [Vite Configuration Reference](https://vite.dev/config/).
 
 ## Project Setup
+
+### Iniciar projeto
+```sh
+npm create vite@latest
+```
+```sh
+cd nome-do-projeto
+```
 
 ```sh
 npm install
